@@ -28,6 +28,7 @@ The purpose of a network is to facilitate the exchange of data and information b
     - Nodes are the fundamental components of a network and can be any device capable of connecting to the network.
     - Common nodes include computers, laptops, servers, printers, switches, routers, and even smartphones.
     - Each node on the network has a unique identifier (like an IP address) that allows it to be addressed and identified by other devices.
+
     ![image](https://github.com/izzypt/NetPractice/assets/73948790/0674269b-f852-4544-b363-10586b958630)
 
 2. ***Communication Channels:***
