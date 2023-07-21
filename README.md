@@ -106,9 +106,12 @@ These fundamental components work together to form a network infrastructure that
     
     - Network Layer (Layer 3):
         - The Network layer deals with routing data packets between different networks and is responsible for logical addressing and path determination.
-        - Routers operate at this layer and use IP (Internet Protocol) addresses to direct data to the correct destination.
+        -  Data is encapsulated into packets, also known as datagrams.
+        -  The Network layer adds a header to the data received from the Transport layer, which includes the source and destination IP addresses, as well as other relevant information for routing the packet to its destination.
+        -  Once the packet is created, the Network layer is responsible for routing it through different networks to reach the intended destination.
+        -  Routers operate at this layer and use IP (Internet Protocol) addresses to direct data to the correct destination.
         - The most common protocol at this layer is the IPv4 or IPv6 (IP Protocol).
-    
+
     - Data Link Layer (Layer 2):
         - The Data Link layer is responsible for data framing, error detection, and media access control.
         - It ***organizes raw bits into frames*** and ***ensures reliable data transmission within the local network segment***.
