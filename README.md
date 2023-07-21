@@ -224,3 +224,33 @@ This process yields the network address, which is used by routers to determine h
 For example, let's take the IPv4 address 192.168.1.1 with a subnet mask of 255.255.255.0. The logical AND operation between these two values will result in the network address 192.168.1.0. The "0" in the host part of the address indicates that this portion can be used to represent multiple devices (in this case, 256 host addresses, ranging from 192.168.1.1 to 192.168.1.254).
 
 The subnet mask helps define the size of the network and its range of valid IP addresses. Smaller subnet masks (e.g., 255.255.255.0) allow for more hosts within the same network, while larger subnet masks (e.g., 255.255.0.0) create smaller networks with fewer available host addresses.
+
+
+# MAC and MAC Adresses
+
+- MAC address stands for Media Access Control address. 
+- It is a unique identifier assigned to a network interface card (NIC) or network adapter of a network device, such as a computer, laptop, smartphone, router, or switch.
+- The MAC address is a hardware-based address, burned into the NIC during manufacturing, and it is used to uniquely identify a device on a local network segment.
+
+![image](https://github.com/izzypt/NetPractice/assets/73948790/47eaa5c7-dc7a-44c0-a520-9d67431b1c48)
+
+
+Key characteristics of MAC addresses:
+
+1. Uniqueness: Each MAC address is globally unique, meaning no two devices on the planet should have the same MAC address. This uniqueness is crucial for proper functioning of network communication.
+
+2. Format: A MAC address is typically represented as a string of six pairs of hexadecimal digits, separated by colons or hyphens. For example, a MAC address could look like "00:1A:2B:3C:4D:5E."
+
+3. Locality: MAC addresses are used at the Data Link Layer (Layer 2) of the OSI model and are relevant within the local network segment or LAN. Routers operate at the Network Layer (Layer 3) and use IP addresses to direct traffic between different networks.
+
+The purpose and usage of MAC addresses in networking:
+
+1. Address Resolution: MAC addresses play a critical role in local network communication. When devices communicate within a LAN, they use MAC addresses to send data directly to the intended recipient. When a device wants to communicate with another device on the same network, it uses the destination device's MAC address to encapsulate the data into frames and transmit it over the local network.
+
+2. Data Link Layer Operation: The Data Link Layer uses MAC addresses for frame addressing and media access control. Each frame transmitted over a local network includes both the source and destination MAC addresses in its header. Switches and bridges within the local network use MAC addresses to determine how to forward frames to their intended destination.
+
+3. MAC Table in Switches: Switches maintain a MAC table that associates MAC addresses with the corresponding physical ports to which devices are connected. When a switch receives a frame with a destination MAC address, it looks up the MAC table to determine which port to forward the frame to, optimizing local network traffic flow.
+
+4. Wireless Networking: In Wi-Fi (wireless) networks, MAC addresses are used for device identification and authentication. Devices associate with Wi-Fi access points using their MAC addresses, and network administrators can implement MAC address filtering to control access to the network.
+
+It's important to note that MAC addresses are specific to the local network and are not used for routing data between different networks (which is the role of IP addresses at the Network Layer). For internet communication, devices rely on IP addresses to route data packets across different networks until they reach their destination.
