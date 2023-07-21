@@ -1,11 +1,14 @@
 # NetPractice
+
+![image](https://github.com/izzypt/NetPractice/assets/73948790/86afd98e-a091-4fdb-ab79-7e4343dc3c56)
+
 A System Administration related exercise, to discover networking and configure small-scale networks.
+
 
 # Networking basics
 
 A network is a collection of interconnected devices (such as computers, servers, routers, switches, and other hardware) that can communicate with each other and share resources. 
 
-The purpose of a network is to facilitate the exchange of data and information between these devices efficiently and securely.
 
 ### Primary types of networks:
 
@@ -224,6 +227,7 @@ Regardless of the version, the IP address allows devices to send and receive dat
 
 https://www.cloudflare.com/learning/network-layer/what-is-a-subnet/
 https://community.spiceworks.com/networking/articles/2491-how-to-calculate-a-subnet-mask
+https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking
 
 > A subnet mask is like an IP address, but for only internal usage within a network. Routers use subnet masks to route data packets to the right place. 
 
