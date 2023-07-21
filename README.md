@@ -90,7 +90,9 @@ Regardless of the version, the IP address allows devices to send and receive dat
 - A subnet mask is used to divide an IP address into two parts: the ***network part*** and the ***host part***. 
 - It is a 32-bit value (for IPv4) that serves as a filter to determine which portion of the IP address represents the network and which part identifies the specific device within that network.
 
-The subnet mask is applied to the IP address using a logical AND operation. This process yields the network address, which is used by routers to determine how to forward data to the appropriate destination.
+The subnet mask is applied to the IP address using a logical AND operation. 
+
+This process yields the network address, which is used by routers to determine how to forward data to the appropriate destination.
 
 For example, let's take the IPv4 address 192.168.1.1 with a subnet mask of 255.255.255.0. The logical AND operation between these two values will result in the network address 192.168.1.0. The "0" in the host part of the address indicates that this portion can be used to represent multiple devices (in this case, 256 host addresses, ranging from 192.168.1.1 to 192.168.1.254).
 
