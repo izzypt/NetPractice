@@ -65,6 +65,61 @@ The purpose of a network is to facilitate the exchange of data and information b
 
 These fundamental components work together to form a network infrastructure that enables communication and resource sharing among devices, whether within a local environment or across vast distances in a wide area network.
 
+# TCP/IP (Transmission Control Protocol/Internet Protocol) 
+
+Is the foundational set of protocols used for communication on the internet and most modern computer networks. 
+
+Understanding TCP/IP addressing is essential for configuring a small-scale network. 
+
+Here are some fundamentals:
+
+1. ***IP Addressing***:
+
+   - IP addressing is at the core of TCP/IP and is used to uniquely identify devices on a network.
+   - An IP address is a 32-bit (IPv4) or 128-bit (IPv6) numeric label assigned to each device.
+   - It is represented as a series of decimal numbers separated by periods (for IPv4) or as groups of hexadecimal digits separated by colons (for IPv6).
+    
+    For example, an IPv4 address looks like: 192.168.1.1
+    And an IPv6 address looks like: 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+    
+    IPv4 addresses are more common, but IPv6 addresses are becoming increasingly important due to the exhaustion of IPv4 addresses.
+
+2. ***IP Classes***:
+
+    - IPv4 addresses are divided into classes, which determine the size of the network and the number of hosts it can accommodate.
+    - There are five classes: A, B, C, D, and E.
+    
+        - Class A: Begins with a binary "0" in the first bit and has 8 bits for the network portion, allowing for a large number of hosts but a limited number of networks.
+        - Class B: Begins with binary "10" in the first two bits and has 16 bits for the network portion, providing a balance between the number of networks and hosts.
+        - Class C: Begins with binary "110" in the first three bits and has 24 bits for the network portion, allowing for many networks with a limited number of hosts.
+        - Class D: Begins with binary "1110" in the first four bits and is reserved for multicast addresses (used for one-to-many communication).
+        - Class E: Begins with binary "1111" in the first four bits and is reserved for experimental purposes.
+
+3. ***Subnetting***:
+
+    - Subnetting allows network administrators to divide a large network into smaller, more manageable subnetworks (subnets).
+    - It involves borrowing bits from the host portion of an IP address to create subnets.
+    - Subnetting helps optimize network performance, security, and address allocation.
+
+5. ***Subnet Mask***:
+
+    - A subnet mask is a 32-bit value (similar in format to an IP address) that accompanies an IP address to identify the network and host portions.
+    - It contains a series of binary "1s" followed by binary "0s."
+    - The "1s" in the mask correspond to the network bits, and the "0s" correspond to the host bits.
+
+    For example, a subnet mask of 255.255.255.0 (or /24 in CIDR notation) indicates that the first 24 bits represent the network portion, and the remaining 8 bits represent the host portion.
+
+6. ***CIDR Notation***:
+
+   CIDR (Classless Inter-Domain Routing) notation is a compact way to represent IP addresses and subnet masks. It consists of the IP address followed by a slash and the number of bits used for the network portion. For example, 192.168.1.0/24 represents an IPv4 network with a subnet mask of 255.255.255.0.
+
+7. ***DHCP (Dynamic Host Configuration Protocol)***:
+
+   - DHCP is a protocol used to automatically assign IP addresses to devices on a network.
+   - Instead of manually configuring each device's IP address, DHCP servers dynamically allocate and manage IP addresses for devices as they join the network.
+
+By understanding these fundamentals, you can start configuring a small-scale network and handle IP address assignment, subnetting, and related aspects effectively. Remember that practice and hands-on experience will solidify your understanding of TCP/IP addressing.
+
 # IP Address vs Subnet Mask
 
 - An ***IP address*** and a ***subnet mask*** are two fundamental components used to define and identify devices on a network. 
