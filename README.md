@@ -96,9 +96,13 @@ These fundamental components work together to form a network infrastructure that
         - This layer helps in maintaining and resuming communication if a connection is interrupted.
     
     - Transport Layer (Layer 4):
-        - The Transport layer is responsible for end-to-end communication and ensures that data is reliably delivered between devices.
-        - It handles error checking, flow control, and data segmentation.
-        - Two widely used transport layer protocols are ***TCP*** (Transmission Control Protocol) and ***UDP*** (User Datagram Protocol).
+        - Responsible for ensuring reliable end-to-end communication between devices, but it is not involved in creating packets.
+        - Instead, its primary functions include segmenting data received from the Application layer above it into smaller units (segments) and providing reliable delivery (in the case of TCP) or connectionless communication (in the case of UDP.
+        - The Transport layer receives data from the Application layer and segments it into smaller units (segments in TCP or datagrams in UDP) for efficient transmission across the network.
+      
+            - TCP (Transmission Control Protocol) is a reliable, connection-oriented protocol. It establishes a connection between the sender and receiver before data transmission and ensures that all data segments are acknowledged and retransmitted if needed, guaranteeing that data arrives intact and in the correct order.
+
+            - UDP (User Datagram Protocol): UDP is a connectionless, unreliable protocol. It does not establish a connection before sending data and does not provide error-checking or retransmission. While it offers faster communication compared to TCP, it does not guarantee delivery.
     
     - Network Layer (Layer 3):
         - The Network layer deals with routing data packets between different networks and is responsible for logical addressing and path determination.
