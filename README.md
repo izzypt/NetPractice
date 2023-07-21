@@ -225,9 +225,9 @@ Regardless of the version, the IP address allows devices to send and receive dat
 
 ### Subnet Mask:
 
-https://www.cloudflare.com/learning/network-layer/what-is-a-subnet/
-https://community.spiceworks.com/networking/articles/2491-how-to-calculate-a-subnet-mask
-https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking
+- What is a subnet: https://www.cloudflare.com/learning/network-layer/what-is-a-subnet/
+- How to calculate a subnet: https://community.spiceworks.com/networking/articles/2491-how-to-calculate-a-subnet-mask
+- IP, subnet and cidr: https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking
 
 > A subnet mask is like an IP address, but for only internal usage within a network. Routers use subnet masks to route data packets to the right place. 
 
