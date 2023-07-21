@@ -121,9 +121,10 @@ Here are some fundamentals:
 
 6. ***CIDR Notation***:
 
-   CIDR (Classless Inter-Domain Routing) notation is a compact way to represent IP addresses and subnet masks. It consists of the IP address followed by a slash and the number of bits used for the network portion. For example, 192.168.1.0/24 represents an IPv4 network with a subnet mask of 255.255.255.0.
+   - CIDR (Classless Inter-Domain Routing) notation is a compact way to represent IP addresses and subnet masks.
+   - It consists of the IP address followed by a slash and the number of bits used for the network portion. For example, 192.168.1.0/24 represents an IPv4 network with a subnet mask of 255.255.255.0.
 
-7. ***DHCP (Dynamic Host Configuration Protocol)***:
+8. ***DHCP (Dynamic Host Configuration Protocol)***:
 
    - DHCP is a protocol used to automatically assign IP addresses to devices on a network.
    - Instead of manually configuring each device's IP address, DHCP servers dynamically allocate and manage IP addresses for devices as they join the network.
