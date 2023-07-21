@@ -89,11 +89,21 @@ Here are some fundamentals:
     - IPv4 addresses are divided into classes, which determine the size of the network and the number of hosts it can accommodate.
     - There are five classes: A, B, C, D, and E.
     
-        - Class A: Begins with a binary "0" in the first bit and has 8 bits for the network portion, allowing for a large number of hosts but a limited number of networks.
-        - Class B: Begins with binary "10" in the first two bits and has 16 bits for the network portion, providing a balance between the number of networks and hosts.
-        - Class C: Begins with binary "110" in the first three bits and has 24 bits for the network portion, allowing for many networks with a limited number of hosts.
-        - Class D: Begins with binary "1110" in the first four bits and is reserved for multicast addresses (used for one-to-many communication).
-        - Class E: Begins with binary "1111" in the first four bits and is reserved for experimental purposes.
+        - Class A:
+          - Begins with a binary "0" in the first bit and has 8 bits for the network portion
+          - allowing for a large number of hosts but a limited number of networks.
+        - Class B:
+          - Begins with binary "10" in the first two bits and has 16 bits for the network portion
+          - providing a balance between the number of networks and hosts.
+        - Class C:
+          - Begins with binary "110" in the first three bits and has 24 bits for the network portion
+          - allowing for many networks with a limited number of hosts.
+        - Class D:
+          - Begins with binary "1110" in the first four bits
+          - and is reserved for multicast addresses (used for one-to-many communication).
+        - Class E:
+          - Begins with binary "1111" in the first four bits
+          - and is reserved for experimental purposes.
 
 3. ***Subnetting***:
 
