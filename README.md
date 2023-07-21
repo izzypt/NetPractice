@@ -168,12 +168,17 @@ Here are some fundamentals:
 
 3. ***Subnetting***:
 
+    - A subnet, or subnetwork, is a network inside a network.
     - Subnetting allows network administrators to divide a large network into smaller, more manageable subnetworks (subnets).
     - It involves borrowing bits from the host portion of an IP address to create subnets.
-    - Subnetting helps optimize network performance, security, and address allocation.
+    - Through subnetting, network traffic can travel a shorter distance without passing through unnecessary routers to reach its destination.
+    - Subnetting make networks more efficient, it helps optimize network performance, security, and address allocation.
+
+        ![image](https://github.com/izzypt/NetPractice/assets/73948790/8cd74454-d03c-4701-b8d1-f4d2f734e916)
 
 5. ***Subnet Mask***:
-
+    
+    - A subnet mask is like an IP address, but for only internal usage within a network.
     - A subnet mask is a 32-bit value (similar in format to an IP address) that accompanies an IP address to identify the network and host portions.
     - It contains a series of binary "1s" followed by binary "0s."
     - The "1s" in the mask correspond to the network bits, and the "0s" correspond to the host bits.
@@ -214,14 +219,27 @@ Regardless of the version, the IP address allows devices to send and receive dat
 
 ### Subnet Mask:
 
-- A subnet mask is used to divide an IP address into two parts: the ***network part*** and the ***host part***. 
+https://www.cloudflare.com/learning/network-layer/what-is-a-subnet/
+https://community.spiceworks.com/networking/articles/2491-how-to-calculate-a-subnet-mask
+
+> A subnet mask is like an IP address, but for only internal usage within a network. Routers use subnet masks to route data packets to the right place. 
+
+
+- A subnet mask is used to divide an IP address into two parts:
+  -  the ***network part***
+  -  and the ***host part***. 
 - It is a 32-bit value (for IPv4) that serves as a filter to determine which portion of the IP address represents the network and which part identifies the specific device within that network.
 
-The subnet mask is applied to the IP address using a logical AND operation. 
+> Suppose Bob answers Alice's letter, but he sends his reply to Alice's place of employment rather than her home. Alice's office is quite large with many different departments. To ensure employees receive their correspondence quickly, the administrative team at Alice's workplace sorts mail by department rather than by individual employee. After receiving Bob's letter, they look up Alice's department and see she works in Customer Support. They send the letter to the Customer Support department instead of to Alice, and the customer support department gives it to Alice.
+
+> In this analogy, "Alice" is like an IP address and "Customer Support" is like a subnet mask. By matching Alice to her department, Bob's letter was quickly sorted into the right group of potential recipients. Without this step, office administrators would have to spend time laboriously looking for the exact location of Alice's desk, which could be anywhere in the building.
+
 
 This process yields the network address, which is used by routers to determine how to forward data to the appropriate destination.
 
-For example, let's take the IPv4 address 192.168.1.1 with a subnet mask of 255.255.255.0. The logical AND operation between these two values will result in the network address 192.168.1.0. The "0" in the host part of the address indicates that this portion can be used to represent multiple devices (in this case, 256 host addresses, ranging from 192.168.1.1 to 192.168.1.254).
+- For example, let's take the IPv4 address 192.168.1.1 with a subnet mask of 255.255.255.0. 
+  - The logical AND operation between these two values will result in the network address 192.168.1.0. 
+  - The "0" in the host part of the address indicates that this portion can be used to represent multiple devices (in this case, 256 host addresses, ranging from 192.168.1.1 to 192.168.1.254).
 
 The subnet mask helps define the size of the network and its range of valid IP addresses. Smaller subnet masks (e.g., 255.255.255.0) allow for more hosts within the same network, while larger subnet masks (e.g., 255.255.0.0) create smaller networks with fewer available host addresses.
 
