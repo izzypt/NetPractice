@@ -136,16 +136,16 @@ Here are some fundamentals:
 
 1. ***IP Addressing***:
 
-   - IP addressing is at the core of TCP/IP and is used to uniquely identify devices on a network.
-   - An IP address is a 32-bit (IPv4) or 128-bit (IPv6) numeric label assigned to each device.
-   - It is represented as a series of decimal numbers separated by periods (for IPv4) or as groups of hexadecimal digits separated by colons (for IPv6).
-    
-    For example, an IPv4 address looks like: 192.168.1.1
-    And an IPv6 address looks like: 2001:0db8:85a3:0000:0000:8a2e:0370:7334
-    
-    IPv4 addresses are more common, but IPv6 addresses are becoming increasingly important due to the exhaustion of IPv4 addresses.
+    - IP addressing is at the core of TCP/IP and is used to uniquely identify devices on a network.
+    - IP addresses are organized in IP classes
+    - An IP address is
+       - a 32-bit (IPv4) , which looks like this: ```192.168.1.1```
+       - or a 128-bit (IPv6) numeric label, which looks like: looks like: ```2001:0db8:85a3:0000:0000:8a2e:0370:7334```
+    - IPv4 addresses are more common, but IPv6 addresses are becoming increasingly important due to the exhaustion of IPv4 addresses.
 
 2. ***IP Classes***:
+
+   ![image](https://github.com/izzypt/NetPractice/assets/73948790/5870a28c-72ad-46a1-86ee-06be9e6847d7)
 
     - IPv4 addresses are divided into classes, which determine the size of the network and the number of hosts it can accommodate.
     - There are five classes: A, B, C, D, and E.
@@ -166,7 +166,10 @@ Here are some fundamentals:
           - Begins with binary "1111" in the first four bits
           - and is reserved for experimental purposes.
 
-3. ***Subnetting***:
+    ![image](https://github.com/izzypt/NetPractice/assets/73948790/628b4da1-1146-4802-ad33-93156aae0ec6)
+
+
+4. ***Subnetting***:
 
     - A subnet, or subnetwork, is a network inside a network.
     - Subnetting allows network administrators to divide a large network into smaller, more manageable subnetworks (subnets).
