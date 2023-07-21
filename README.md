@@ -65,6 +65,60 @@ The purpose of a network is to facilitate the exchange of data and information b
 
 These fundamental components work together to form a network infrastructure that enables communication and resource sharing among devices, whether within a local environment or across vast distances in a wide area network.
 
+# The OSI Model
+
+![image](https://github.com/izzypt/NetPractice/assets/73948790/a8209bd5-003b-4a3f-aa07-cd6ace630a27)
+
+
+- The OSI (Open Systems Interconnection) model is a conceptual framework that helps us understand how a network functions and operates at different levels.
+
+- It provides a structured and systematic approach to comprehend the complex processes involved in network communication.
+
+- By dividing the networking tasks into seven distinct layers, the OSI model makes it easier to grasp the different functionalities and interactions that occur when data is transmitted between devices on a network. 
+
+- It was developed by the International Organization for Standardization (ISO) to facilitate interoperability between different vendors' networking hardware and software. 
+
+- The criteria that separate the layers are the specific functions and responsibilities that they handle in the networking process:
+
+    - Application Layer (Layer 7):
+        - The Application layer is the topmost layer and is responsible for providing network services directly to end-users or applications.
+        - It deals with user interfaces, file transfers, email services, web browsing, and other high-level application protocols.
+        - Examples of protocols at this layer include ***HTTP*** (for web browsing), ***SMTP*** (for email), and ***FTP*** (for file transfer).
+    
+    - Presentation Layer (Layer 6):
+        - The Presentation layer is responsible for ***data translation***, ***encryption***, and ***compression*** to ensure that data sent by one application can be properly interpreted by another.
+        - It takes care of data formatting, ***character encoding***, and ***encryption/decryption*** processes.
+        - Commonly used encryption and compression protocols like ***SSL/TLS*** and ***JPEG*** operate at this layer.
+    
+    - Session Layer (Layer 5):
+        - The Session layer establishes, maintains, and terminates communication sessions between devices on a network.
+        - It manages session synchronization, checkpointing, and recovery processes.
+        - This layer helps in maintaining and resuming communication if a connection is interrupted.
+    
+    - Transport Layer (Layer 4):
+        - The Transport layer is responsible for end-to-end communication and ensures that data is reliably delivered between devices.
+        - It handles error checking, flow control, and data segmentation.
+        - Two widely used transport layer protocols are ***TCP*** (Transmission Control Protocol) and ***UDP*** (User Datagram Protocol).
+    
+    - Network Layer (Layer 3):
+        - The Network layer deals with routing data packets between different networks and is responsible for logical addressing and path determination.
+        - Routers operate at this layer and use IP (Internet Protocol) addresses to direct data to the correct destination.
+        - The most common protocol at this layer is the IPv4 or IPv6 (IP Protocol).
+    
+    - Data Link Layer (Layer 2):
+        - The Data Link layer is responsible for data framing, error detection, and media access control.
+        - It ***organizes raw bits into frames*** and ***ensures reliable data transmission within the local network segment***.
+        - Ethernet, Wi-Fi, and PPP are common data link layer protocols.
+    
+    - Physical Layer (Layer 1):
+        - The Physical layer deals with the physical transmission of data over the network medium.
+        - It defines the hardware specifications, such as cables, switches, and network interface cards (NICs), and how bits are transmitted over the medium.
+
+- The purpose of the OSI model is to provide a common reference model that allows different networking technologies and protocols to interoperate.
+- By dividing the networking process into distinct layers, the model simplifies network design, troubleshooting, and development.
+- It also enables vendors to develop networking hardware and software independently, as long as they adhere to the standards and interfaces defined by each layer.
+- This modularity and layering make it easier to understand the complex networking processes and facilitates the development of new technologies without disrupting the existing ones.
+
 # TCP/IP (Transmission Control Protocol/Internet Protocol) 
 
 Is the foundational set of protocols used for communication on the internet and most modern computer networks. 
