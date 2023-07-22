@@ -1,6 +1,6 @@
 # NetPractice
 
- ![image](https://github.com/izzypt/NetPractice/assets/73948790/86afd98e-a091-4fdb-ab79-7e4343dc3c56) 
+   ![image](https://github.com/izzypt/NetPractice/assets/73948790/86afd98e-a091-4fdb-ab79-7e4343dc3c56) 
 
 A System Administration related exercise, to discover networking and configure small-scale networks.
 
@@ -45,7 +45,7 @@ A network is a collection of interconnected devices (such as computers, servers,
     - They are used in LANs to connect multiple devices together and efficiently manage the data flow within the network.
     - Switches use MAC (Media Access Control) addresses to forward data to the correct destination node.
 
-    ![image](https://github.com/izzypt/NetPractice/assets/73948790/9b725857-166f-4aaf-960b-7325d7e35888)
+      ![image](https://github.com/izzypt/NetPractice/assets/73948790/9b725857-166f-4aaf-960b-7325d7e35888)
 
 
 4. ***Routers:***
@@ -54,7 +54,7 @@ A network is a collection of interconnected devices (such as computers, servers,
     - They are used in both LANs and WANs to connect different networks together and make decisions about how to forward data packets between them.
     - Routers use IP addresses to determine the best path for data to reach its destination.
 
-    ![image](https://github.com/izzypt/NetPractice/assets/73948790/7fcabc2d-13b3-4afb-86e5-864a45d324b6)
+      ![image](https://github.com/izzypt/NetPractice/assets/73948790/7fcabc2d-13b3-4afb-86e5-864a45d324b6)
 
 
 5. ***Protocols:***
@@ -63,7 +63,7 @@ A network is a collection of interconnected devices (such as computers, servers,
     - They ensure that devices can understand each other and communicate effectively.
     - Common networking protocols include TCP/IP (Transmission Control Protocol/Internet Protocol), UDP (User Datagram Protocol), HTTP (Hypertext Transfer Protocol), and many others.
 
-   ![image](https://github.com/izzypt/NetPractice/assets/73948790/68a067d1-1377-4704-a113-936105367bcf)
+      ![image](https://github.com/izzypt/NetPractice/assets/73948790/68a067d1-1377-4704-a113-936105367bcf)
 
 
 7. ***Network Interface Cards (NICs):***
