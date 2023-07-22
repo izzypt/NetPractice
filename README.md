@@ -9,6 +9,7 @@ A System Administration related exercise, to discover networking and configure s
 
 A network is a collection of interconnected devices (such as computers, servers, routers, switches, and other hardware) that can communicate with each other and share resources. 
 
+   https://www.youtube.com/watch?v=s_Ntt6eTn94
 
 ### Primary types of networks:
 
