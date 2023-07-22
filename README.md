@@ -32,8 +32,6 @@ A network is a collection of interconnected devices (such as computers, servers,
     - Common nodes include computers, laptops, servers, printers, switches, routers, and even smartphones.
     - Each node on the network has a unique identifier (like an IP address) that allows it to be addressed and identified by other devices.
 
-    ![image](https://github.com/izzypt/NetPractice/assets/73948790/0674269b-f852-4544-b363-10586b958630)
-
 2. ***Communication Channels:***
 
     - Communication channels are the pathways through which data is transmitted between nodes on the network.
@@ -149,7 +147,7 @@ Here are some fundamentals:
 
 2. ***IP Classes***:
 
-   ![image](https://github.com/izzypt/NetPractice/assets/73948790/5870a28c-72ad-46a1-86ee-06be9e6847d7)
+    ![image](https://github.com/izzypt/NetPractice/assets/73948790/ded0ea96-e5f9-4b40-9806-adaeb84ca3e7)
 
     - IPv4 addresses are divided into classes, which determine the size of the network and the number of hosts it can accommodate.
     - There are five classes: A, B, C, D, and E.
@@ -170,7 +168,7 @@ Here are some fundamentals:
           - Begins with binary "1111" in the first four bits
           - and is reserved for experimental purposes.
 
-    ![image](https://github.com/izzypt/NetPractice/assets/73948790/628b4da1-1146-4802-ad33-93156aae0ec6)
+   ![image](https://github.com/izzypt/NetPractice/assets/73948790/5870a28c-72ad-46a1-86ee-06be9e6847d7)
 
 
 4. ***Subnetting***:
