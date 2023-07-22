@@ -11,6 +11,8 @@ A network is a collection of interconnected devices (such as computers, servers,
 
    https://www.youtube.com/watch?v=s_Ntt6eTn94
 
+   https://mycomputernotes.com/network-address-and-broadcast-address/
+
 ### Primary types of networks:
 
 1. ***Local Area Network (LAN):***
