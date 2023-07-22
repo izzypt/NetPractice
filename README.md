@@ -54,6 +54,8 @@ A network is a collection of interconnected devices (such as computers, servers,
     - Connects two or more packet-switched networks or subnetworks, it serves two primary functions:
       - Managing the traffic between these networks by forwarding data packets to their intended IP addresses
       - And allowing multiple devices to use the same internet connection.
+    - A router’s job is to direct and guide the packets that are sent so they get to their destination (which is their IP address) as efficiently as possible.
+    - In order to send the packets effictively, a router uses an internal routing table (which is a list of paths to various network destination).
     - They are used in both LANs and WANs to connect different networks together and make decisions about how to forward data packets between them.
     - Routers use IP addresses to determine the best path for data to reach its destination.
 
