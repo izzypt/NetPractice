@@ -63,7 +63,8 @@ A network is a collection of interconnected devices (such as computers, servers,
     - They are used in both LANs and WANs to connect different networks together and make decisions about how to forward data packets between them.
     - Routers use IP addresses to determine the best path for data to reach its destination.
 
-      ![image](https://github.com/izzypt/NetPractice/assets/73948790/7fcabc2d-13b3-4afb-86e5-864a45d324b6)
+      ![image](https://github.com/izzypt/NetPractice/assets/73948790/0877d49c-20d2-4a7c-ae9c-9a878c13cc43)
+      ![image](https://github.com/izzypt/NetPractice/assets/73948790/0f86ff8c-efa7-43e4-a6e1-f44d73083784)
 
 
 5. ***Protocols:***
