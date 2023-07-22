@@ -138,7 +138,6 @@ Here are some fundamentals:
 1. ***IP Addressing***:
 
     - IP addressing is at the core of TCP/IP and is used to uniquely identify devices on a network.
-    - IP addresses are organized in IP classes
     - An IP address is
        - a 32-bit (IPv4) , which looks like this: ```192.168.1.1```
        - or a 128-bit (IPv6) numeric label, which looks like: looks like: ```2001:0db8:85a3:0000:0000:8a2e:0370:7334```
