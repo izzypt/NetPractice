@@ -187,7 +187,8 @@ Here are some fundamentals:
    
     - A subnet, or subnetwork, is a network inside a network.
     - Subnetting allows network administrators to divide a large network into smaller, more manageable subnetworks (subnets).
-    - It involves borrowing bits from the host portion of an IP address to create subnets.
+    - Subnetting is the process of stealing bits from the HOST part of IP address in order to divide the large network into smaller ones called subnets.
+    - After subnetting, we end up with NETWORK SUBNET HOST fields, and we always reserve an IP address to identify the subnet and another one to identify the broadcast subnet address, and through subnetting, network traffic can travel a shorter distance without passing through unnecessary routes to reach its destination.
     - Through subnetting, network traffic can travel a shorter distance without passing through unnecessary routers to reach its destination.
     - Subnetting make networks more efficient, it helps optimize network performance, security, and address allocation.
 
