@@ -145,6 +145,7 @@ Here are some fundamentals:
        - a 32-bit (IPv4) , which looks like this: ```192.168.1.1```
        - or a 128-bit (IPv6) numeric label, which looks like: looks like: ```2001:0db8:85a3:0000:0000:8a2e:0370:7334```
     - IPv4 addresses are more common, but IPv6 addresses are becoming increasingly important due to the exhaustion of IPv4 addresses.
+    ![image](https://github.com/izzypt/NetPractice/assets/73948790/e78e31f6-114f-44ea-b3f3-9c00f418dc37)
 
 2. ***IP Classes***:
 
@@ -174,6 +175,8 @@ Here are some fundamentals:
 
 4. ***Subnetting***:
 
+   Beginners guide to subnetting: https://www.packetcoders.io/a-beginners-guide-to-subnetting/
+   
     - A subnet, or subnetwork, is a network inside a network.
     - Subnetting allows network administrators to divide a large network into smaller, more manageable subnetworks (subnets).
     - It involves borrowing bits from the host portion of an IP address to create subnets.
@@ -182,7 +185,7 @@ Here are some fundamentals:
 
         ![image](https://github.com/izzypt/NetPractice/assets/73948790/8cd74454-d03c-4701-b8d1-f4d2f734e916)
 
-5. ***Subnet Mask***:
+6. ***Subnet Mask***:
     
     - A subnet mask is like an IP address, but for only internal usage within a network.
     - A subnet mask is a 32-bit value (similar in format to an IP address) that accompanies an IP address to identify the network and host portions.
@@ -191,7 +194,7 @@ Here are some fundamentals:
 
     For example, a subnet mask of 255.255.255.0 (or /24 in CIDR notation) indicates that the first 24 bits represent the network portion, and the remaining 8 bits represent the host portion.
 
-6. ***CIDR Notation***:
+7. ***CIDR Notation***:
 
    - CIDR (Classless Inter-Domain Routing) notation is a compact way to represent IP addresses and subnet masks.
    - It consists of the IP address followed by a slash and the number of bits used for the network portion. For example, 192.168.1.0/24 represents an IPv4 network with a subnet mask of 255.255.255.0.
