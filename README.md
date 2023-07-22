@@ -51,6 +51,9 @@ A network is a collection of interconnected devices (such as computers, servers,
 4. ***Routers:***
 
     - Routers are networking devices that operate at the network layer (Layer 3) of the OSI model.
+    - Connects two or more packet-switched networks or subnetworks, it serves two primary functions:
+      - Managing the traffic between these networks by forwarding data packets to their intended IP addresses
+      - And allowing multiple devices to use the same internet connection.
     - They are used in both LANs and WANs to connect different networks together and make decisions about how to forward data packets between them.
     - Routers use IP addresses to determine the best path for data to reach its destination.
 
