@@ -44,8 +44,12 @@ A network is a collection of interconnected devices (such as computers, servers,
     - Switches are networking devices that operate at the data link layer (Layer 2) of the OSI model.
     - They are used in LANs to connect multiple devices together and efficiently manage the data flow within the network.
     - Switches use MAC (Media Access Control) addresses to forward data to the correct destination node.
+    - A network switch is a box that you connect to your home router to gain more Ethernet ports.
+    - Think of it as functioning like a USB hub but for networking.
 
-      ![image](https://github.com/izzypt/NetPractice/assets/73948790/9b725857-166f-4aaf-960b-7325d7e35888)
+      ![image](https://github.com/izzypt/NetPractice/assets/73948790/7f979890-43f0-4d04-833a-a09ea1336e3e)
+
+      ![image](https://github.com/izzypt/NetPractice/assets/73948790/f99be430-742b-477a-a633-1baf04a3ee21)
 
 
 4. ***Routers:***
