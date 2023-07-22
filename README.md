@@ -273,6 +273,15 @@ This process yields the network address, which is used by routers to determine h
 
 The subnet mask helps define the size of the network and its range of valid IP addresses. Smaller subnet masks (e.g., 255.255.255.0) allow for more hosts within the same network, while larger subnet masks (e.g., 255.255.0.0) create smaller networks with fewer available host addresses.
 
+# How to Calculate Network Address and Broadcast Address
+
+- In every network, the first and the last IP addresses are not assigned to any host.
+- The first IP address is called the network address and the last IP address is called the broadcast address.
+
+   ![image](https://github.com/izzypt/NetPractice/assets/73948790/bc222886-b700-4a19-8cbf-f36c2f286dbb)
+   ![image](https://github.com/izzypt/NetPractice/assets/73948790/40d52ced-fa30-4a59-a866-3f85dc7ed075)
+   ![image](https://github.com/izzypt/NetPractice/assets/73948790/7aff3952-fc66-4b1c-995f-9ea0bd528fb8)
+
 
 # MAC and MAC Adresses
 
