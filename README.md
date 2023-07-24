@@ -4,15 +4,23 @@
 
 A System Administration related exercise, to discover networking and configure small-scale networks.
 
+# Table of Contents
+
+- [Primary Types Of Networks](#networktypes)
+- [Fundamental Components of a Network](#networkcomponents)
+- [The OSI Model](#osimodel)
+- [TCP/IP (Transmission Control Protocol/Internet Protocol)](#tcpip)
+- [IP Address vs Subnet Mask](#ipandmask)
+- [How to Calculate Network Address and Broadcast Address](#calculateadd)
+- [MAC and MAC Adresses](#macadd)
+- [Exercise Solution](#exercises)
 
 # Networking basics
 
 A network is a collection of interconnected devices (such as computers, servers, routers, switches, and other hardware) that can communicate with each other and share resources. 
 
-   https://www.youtube.com/watch?v=s_Ntt6eTn94
 
-   https://mycomputernotes.com/network-address-and-broadcast-address/
-
+<a id="networktypes"></a>
 ### Primary types of networks:
 
 1. ***Local Area Network (LAN):***
@@ -27,6 +35,7 @@ A network is a collection of interconnected devices (such as computers, servers,
     - WANs use various technologies like leased lines, fiber-optic cables, satellites, and the internet to enable communication between distant locations.
     - WANs are typically slower than LANs and may have higher latency due to the longer distances involved.
 
+<a id="networkcomponents"></a>
 ### Fundamental Components of a Network:
 
 1. ***Nodes (Devices):***
@@ -90,6 +99,7 @@ A network is a collection of interconnected devices (such as computers, servers,
 
 These fundamental components work together to form a network infrastructure that enables communication and resource sharing among devices, whether within a local environment or across vast distances in a wide area network.
 
+<a id="osimodel"></a>
 # The OSI Model
 
 ![image](https://github.com/izzypt/NetPractice/assets/73948790/a8209bd5-003b-4a3f-aa07-cd6ace630a27)
@@ -151,6 +161,7 @@ These fundamental components work together to form a network infrastructure that
 - It also enables vendors to develop networking hardware and software independently, as long as they adhere to the standards and interfaces defined by each layer.
 - This modularity and layering make it easier to understand the complex networking processes and facilitates the development of new technologies without disrupting the existing ones.
 
+<a id="tcpip"></a>
 # TCP/IP (Transmission Control Protocol/Internet Protocol) 
 
 Is the foundational set of protocols used for communication on the internet and most modern computer networks. 
@@ -228,15 +239,14 @@ Here are some fundamentals:
 
 By understanding these fundamentals, you can start configuring a small-scale network and handle IP address assignment, subnetting, and related aspects effectively. Remember that practice and hands-on experience will solidify your understanding of TCP/IP addressing.
 
+<a id="ipandmask"></a>
 # IP Address vs Subnet Mask
 
 - An ***IP address*** and a ***subnet mask*** are two fundamental components used to define and identify devices on a network. 
-- An IP address uniquely identifies a device on a network, while a subnet mask determines how the IP address is divided into network and host portions.
-- Together, they help in routing data effectively within and between networks.
+- An IP address uniquely identifies a device on a network ( the network and the device)
+- A subnet mask determines which portions of the IP address are the network address and which one are the host address.
 
 ### IP Address:
-
-An IP address is a unique numerical label assigned to each device (such as a computer, printer, router, or smartphone) connected to a network that uses the Internet Protocol for communication. 
 
 The primary purpose of an IP address is to identify and locate devices within a network or across the internet.
 
@@ -250,13 +260,10 @@ Regardless of the version, the IP address allows devices to send and receive dat
 
 ### Subnet Mask:
 
-- What is a subnet: https://www.cloudflare.com/learning/network-layer/what-is-a-subnet/
+- What is a subnet: https://www.cloudflare.com/learning/network-layer/what-is-a-subnet/ and https://www.youtube.com/watch?v=s_Ntt6eTn94
 - How to calculate a subnet: https://community.spiceworks.com/networking/articles/2491-how-to-calculate-a-subnet-mask
 - IP, subnet and cidr: https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking
 - Subnet calculator: https://www.calculator.net/ip-subnet-calculator.html
-
-> A subnet mask is like an IP address, but for only internal usage within a network. Routers use subnet masks to route data packets to the right place. 
-
 
 - A subnet mask is used to divide an IP address into two parts:
   -  the ***network part***
@@ -276,16 +283,18 @@ This process yields the network address, which is used by routers to determine h
 
 The subnet mask helps define the size of the network and its range of valid IP addresses. Smaller subnet masks (e.g., 255.255.255.0) allow for more hosts within the same network, while larger subnet masks (e.g., 255.255.0.0) create smaller networks with fewer available host addresses.
 
+<a id="calculateadd"></a>
 # How to Calculate Network Address and Broadcast Address
 
 - In every network, the first and the last IP addresses are not assigned to any host.
 - The first IP address is called the network address and the last IP address is called the broadcast address.
+- References : https://mycomputernotes.com/network-address-and-broadcast-address/
 
    ![image](https://github.com/izzypt/NetPractice/assets/73948790/bc222886-b700-4a19-8cbf-f36c2f286dbb)
    ![image](https://github.com/izzypt/NetPractice/assets/73948790/40d52ced-fa30-4a59-a866-3f85dc7ed075)
    ![image](https://github.com/izzypt/NetPractice/assets/73948790/7aff3952-fc66-4b1c-995f-9ea0bd528fb8)
 
-
+<a id="macadd"></a>
 # MAC and MAC Adresses
 
 - MAC address stands for Media Access Control address. 
@@ -314,3 +323,6 @@ The purpose and usage of MAC addresses in networking:
 4. Wireless Networking: In Wi-Fi (wireless) networks, MAC addresses are used for device identification and authentication. Devices associate with Wi-Fi access points using their MAC addresses, and network administrators can implement MAC address filtering to control access to the network.
 
 It's important to note that MAC addresses are specific to the local network and are not used for routing data between different networks (which is the role of IP addresses at the Network Layer). For internet communication, devices rely on IP addresses to route data packets across different networks until they reach their destination.
+
+<a id="exercises"></a>
+# Exercise Solution
