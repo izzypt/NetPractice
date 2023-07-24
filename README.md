@@ -208,6 +208,11 @@ Here are some fundamentals:
 4. ***Subnetting***:
 
    Beginners guide to subnetting: https://www.packetcoders.io/a-beginners-guide-to-subnetting/
+
+   ![image](https://github.com/izzypt/NetPractice/assets/73948790/ae48bb4c-eda7-453e-9c4b-ec84f1b9d031)
+   ![image](https://github.com/izzypt/NetPractice/assets/73948790/5fcd51d3-6f4f-4d07-86c1-0491273b93a1)
+
+
    
     - A subnet, or subnetwork, is a network inside a network.
     - Subnetting allows network administrators to divide a large network into smaller, more manageable subnetworks (subnets).
