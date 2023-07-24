@@ -13,6 +13,7 @@ A System Administration related exercise, to discover networking and configure s
 - [IP Address vs Subnet Mask](#ipandmask)
 - [How to Calculate Network Address and Broadcast Address](#calculateadd)
 - [MAC and MAC Adresses](#macadd)
+- [Finding the valid range of hosts IP addresses](#hostrange)
 - [Exercise Solution](#exercises)
 
 # Networking basics
@@ -329,6 +330,45 @@ The purpose and usage of MAC addresses in networking:
 
 It's important to note that MAC addresses are specific to the local network and are not used for routing data between different networks (which is the role of IP addresses at the Network Layer). For internet communication, devices rely on IP addresses to route data packets across different networks until they reach their destination.
 
+<a id="hostrange"></a>
+# Finding the valid range of hosts IP addresses
+
+In a small-scale network, you need the following information to find the valid range of IP addresses for the hosts:
+
+1. ```Network Address```: This is the IP address representing the network itself. All hosts within the network will share the same network address.
+
+2. ```Subnet Mask```: The subnet mask determines the size of the network (the number of hosts it can accommodate) and identifies which portion of the IP address represents the network and which portion represents the host.
+
+3. ```Broadcast Address```: This is a special address that is used to send data to all hosts within the network simultaneously.
+
+To find the valid range of IP addresses for the hosts, follow these steps:
+
+1. Determine the network address: Perform a bitwise ```AND``` operation between the ```IP address``` of any host within the network and the ```subnet mask``` to find the network address.
+
+2. Determine the broadcast address: Perform a bitwise ```OR``` operation between the ```network address``` and the bitwise ```negation of the subnet mask``` to find the broadcast address.
+
+3. Calculate the valid host IP address range: The valid host IP addresses are all the IP addresses between the network address (excluding the network address itself) and the broadcast address (excluding the broadcast address itself).
+
+For example, let's say you have the following information:
+
+```
+IP address: 192.168.1.100
+Subnet mask: 255.255.255.0 (or /24 in CIDR notation)
+
+Step 1: Determine the network address:
+192.168.1.100 AND 255.255.255.0 = 192.168.1.0
+
+Step 2: Determine the broadcast address:
+192.168.1.0 OR 0.0.0.255 = 192.168.1.255
+
+Step 3: Calculate the valid host IP address range:
+Valid host IP range: 192.168.1.1 to 192.168.1.254
+
+The valid range of IP addresses for the hosts in this example is from 192.168.1.1 to 192.168.1.254.
+```
+
+So, the valid range of IP addresses for the hosts lies between the network address and the broadcast address, excluding both the network and broadcast addresses themselves.
+
 <a id="exercises"></a>
 # Exercise Solution
 
@@ -362,8 +402,16 @@ C1 to D1:
 ![image](https://github.com/izzypt/NetPractice/assets/73948790/f18ea8ae-4e17-4c2d-bfac-d3b5c09689d9)
 
 A1-B1:
--
--
+- Both computer on the same network and should share the same mask: ```255.255.255.224```
+- The subnet mask of ```255.255.255.224``` in binary form:
+
+```
+MASK: 11111111.11111111.11111111.11100000
+```
+
+- In order to find out what the valid range of IP addresses for the host we need to find the network address.
+- The ```network address``` can be obtained by the bitwise ```AND``` between ***IP address*** and ***subnet mask*** : 192.168.139.222 AND 255.255.255.224 = 192.168.139.192
+
 
 C1-D1:
 -
