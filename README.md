@@ -331,3 +331,40 @@ It's important to note that MAC addresses are specific to the local network and 
 
 <a id="exercises"></a>
 # Exercise Solution
+
+### Level 1
+
+![image](https://github.com/izzypt/NetPractice/assets/73948790/a8418731-12af-4bd9-ba15-dcd2b5a916f5)
+
+Goal : Connect computer A1 to B1. Connect C1 to D1.
+
+A1 to B1:
+- Both computer on the same network and share the same ***mask:*** ```255.255.255.0```
+- This means that the first 3 octets of the IP identify the network and the last octet identifies the host.
+- Since we cannot change the network, the first 3 octets of boths IP's need to have the same value: ```104.95.23```
+- To assign a value to the last octet we need to know the range of available bits for the hosts:
+  - The first bit is reserved for the network address : ```00000000``` (0)
+  - The last bit is reserved for the broadcast address: ```11111111``` (255)
+  - So any value between 1 and 254 should be a valid value for the host.
+- A1 value: between ```104.95.23.1``` and ```104.95.23.254```
+
+C1 to D1:
+- Both computer on the same network and share the same ***mask:*** ```255.255.0.0```
+- This means that the first 2 octets of the IP identify the network and the last 2 octets identify the host.
+- Since we cannot change the network, the first 2 octets of boths IP's need to have the same value: ```211.191```
+- To assign a value to the last 2 octet we need to know the range of available bits for the hosts:
+  - The first bit is reserved for the network address : ```00000000.00000000``` (0.0)
+  - The last bit is reserved for the broadcast address: ```11111111.11111111``` (255.255)
+- A1 value: between ```211.191.1.0``` and ```211.191.255.254```
+
+# Level 2
+
+![image](https://github.com/izzypt/NetPractice/assets/73948790/f18ea8ae-4e17-4c2d-bfac-d3b5c09689d9)
+
+A1-B1:
+-
+-
+
+C1-D1:
+-
+-
