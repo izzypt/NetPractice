@@ -14,6 +14,7 @@ A System Administration related exercise, to discover networking and configure s
 - [How to Calculate Network Address and Broadcast Address](#calculateadd)
 - [MAC and MAC Adresses](#macadd)
 - [Finding the valid range of hosts IP addresses](#hostrange)
+- [Loopback interface](#loopback)
 - [Exercise Solution](#exercises)
 
 # Networking basics
@@ -368,6 +369,19 @@ The valid range of IP addresses for the hosts in this example is from 192.168.1.
 ```
 
 So, the valid range of IP addresses for the hosts lies between the network address and the broadcast address, excluding both the network and broadcast addresses themselves.
+
+<a id="loopback"></a>
+# Loopback Interface
+
+In networking, the IP address range 127.0. 0.0 – 127.255. 255.255 is reserved for loopback, a Host self-address, also known as localhost address. 
+
+The loopback interface is a special virtual network interface that allows a network-connected device to communicate with itself. The IP address 127.0.0.1 is commonly used to represent the loopback address.
+
+IPv4 network standards reserve the entire address block 127.0.0.0/8 (more than 16 million addresses) for loopback purposes. 
+
+That means any packet sent to any of those addresses is looped back.
+
+While solving the exercises below I have failed when I tried to connect 2 computer over the newtowrk using this reserved space, so be carefull not to use it.
 
 <a id="exercises"></a>
 # Exercise Solution
