@@ -429,5 +429,5 @@ MASK: 11111111.11111111.11111111.11100000
 - Therefore the valid range of IP hosts lies between those values ```192.168.139.192``` and ```192.168.139.223```, excluding the first and last value which are reserved for the network address and broadcast address.
 
 C1-D1:
--
--
+- We only have 2 bits reserved for the host part, which we can tell by the notation ```/30```
+- It is important to note that the range between ```127.0. 0.0``` – ```127.255. 255.255``` is reserved for localhost.
