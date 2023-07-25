@@ -373,7 +373,7 @@ So, the valid range of IP addresses for the hosts lies between the network addre
 <a id="loopback"></a>
 # Loopback Interface
 
-In networking, the IP address range 127.0. 0.0 – 127.255. 255.255 is reserved for loopback, a Host self-address, also known as localhost address. 
+In networking, the IP address range ```127.0. 0.0``` – ```127.255. 255.255``` is ***reserved*** for loopback, a Host self-address, also known as ```localhost address```. 
 
 The loopback interface is a special virtual network interface that allows a network-connected device to communicate with itself. The IP address 127.0.0.1 is commonly used to represent the loopback address.
 
@@ -424,8 +424,9 @@ MASK: 11111111.11111111.11111111.11100000
 ```
 
 - In order to find out what the valid range of IP addresses for the host we need to find the network address.
-- The ```network address``` can be obtained by the bitwise ```AND``` between ***IP address*** and ***subnet mask*** : 192.168.139.222 AND 255.255.255.224 = 192.168.139.192
-
+- The ```network address``` can be obtained by the bitwise ```AND``` between ***IP address*** and ***subnet mask*** : ```192.168.139.222``` AND ```255.255.255.224``` = 192.168.139.192 (bitwise AND)
+- The ```broadcast address``` can be obtained by the bitwise ```OR``` between the network address and bitwise ```NOT``` of subnet mask: ```192.168.139.192``` OR !```255.255.255.224``` = ```192.168.139.223```.
+- Therefore the valid range of IP hosts lies between those values ```192.168.139.192``` and ```192.168.139.223```, excluding the first and last value which are reserved for the network address and broadcast address.
 
 C1-D1:
 -
