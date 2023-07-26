@@ -370,6 +370,18 @@ The valid range of IP addresses for the hosts in this example is from 192.168.1.
 
 So, the valid range of IP addresses for the hosts lies between the network address and the broadcast address, excluding both the network and broadcast addresses themselves.
 
+### Reserved ranges:
+- Localhost
+
+      127.0. 0.0 – 127.255. 255.255
+
+- If an interface is connected directly or indirectly to the internet, it cannot have an IP address in the following reserved private IP ranges:
+  
+      
+      192.168.0.0 - 192.168.255.255 (65,536 IP addresses)
+      172.16.0.0 - 172.31.255.255   (1,048,576 IP addresses)
+      10.0.0.0 - 10.255.255.255     (16,777,216 IP addresses)
+      
 <a id="loopback"></a>
 # Loopback Interface
 
