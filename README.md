@@ -448,7 +448,9 @@ C1-D1:
 
 ![image](https://github.com/izzypt/NetPractice/assets/73948790/9d395796-457c-42e4-95aa-cdb05b9d428a)
 
+Basically, to solve this exercise I have calculated the range of available hosts for each interface on the router,  since the range of possible IP addresses on each interfaces must not overlap with the range of other interfaces. 
 
+An overlap in the IP address range would imply that the interfaces are on the same network.
 
 INTERFACE R3 => {193 - 254}
 
