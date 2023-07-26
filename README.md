@@ -443,3 +443,15 @@ MASK: 11111111.11111111.11111111.11100000
 C1-D1:
 - We only have 2 bits reserved for the host part, which we can tell by the notation ```/30```
 - It is important to note that the range between ```127.0. 0.0``` – ```127.255. 255.255``` is reserved for localhost.
+
+# Level 4
+
+![image](https://github.com/izzypt/NetPractice/assets/73948790/9d395796-457c-42e4-95aa-cdb05b9d428a)
+
+
+
+INTERFACE R3 => {193 - 254}
+
+INTERFACE R2 => {0 - 127}
+
+INTERFACE R1 => {128 - 192}
