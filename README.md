@@ -334,6 +334,9 @@ It's important to note that MAC addresses are specific to the local network and 
 <a id="hostrange"></a>
 # Finding the valid range of hosts IP addresses
 
+![image](https://github.com/izzypt/NetPractice/assets/73948790/f3fcb024-dabe-40fc-9369-4d21577fd282)
+
+
 In a small-scale network, you need the following information to find the valid range of IP addresses for the hosts:
 
 1. ```Network Address```: This is the IP address representing the network itself. All hosts within the network will share the same network address.
